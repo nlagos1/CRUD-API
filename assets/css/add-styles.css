@@ -1,0 +1,93 @@
+:root{
+  --bg-color: linear-gradient(to right, rgb(11, 2, 67), rgb(249, 87, 167));
+  --second-bg-color: linear-gradient(to right,  rgb(249, 87, 167), rgb(11, 2, 67));
+  --main-color: rgb(11, 2, 67);
+  --second-color: white;
+  --text-color: white;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right,rgb(11, 2, 67), rgb(249, 87, 167));
+}
+
+header{
+    text-align: center;
+}
+header img{
+  border-radius: 50%;
+}
+nav {
+    padding: 1%;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: rgb(254, 38, 162);
+  }
+  section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+  }
+  
+  #add {
+    padding: 60px 0;
+  }
+  
+  #add h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: white;
+  }
+  
+  #add form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  #add .form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #add .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+  }
+  
+  #add .btn-primary {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: none;
+  }
+
+  @media (max-width: 576px) {
+    #add {
+      padding: 40px 20px; 
+    }
+  }

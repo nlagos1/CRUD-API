@@ -1,0 +1,199 @@
+:root{
+  --bg-color: linear-gradient(to right, rgb(11, 2, 67), rgb(249, 87, 167));
+  --second-bg-color: linear-gradient(to right,  rgb(249, 87, 167), rgb(11, 2, 67));
+  --main-color: rgb(11, 2, 67);
+  --second-color: white;
+  --text-color: white;
+}
+
+body {
+        transition: background-color 0.5s ease, background-image 0.5s ease, color 0.5s ease;
+        }
+        body.light-mode {
+            background: linear-gradient(90deg, #321651, #ea4c89);
+            color: #000;
+        }
+
+
+        body.dark-mode {
+            background-color: #0f0f1a;
+            background-image: linear-gradient(to bottom, rgba(15,15,26,0.9), rgba(15,15,26,0.95)), url('assets/images/darkmode.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            color: #fff;
+        }
+        .skill-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 1rem;
+        }
+        .skill-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 0 20px #ff2d75aa;
+        }
+        .text-purple { color: #bd00ff; }
+        img#perfil-img {
+            transition: opacity 0.5s ease;
+        }
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right,rgb(11, 2, 67), rgb(249, 87, 167));
+}
+
+header {
+    color: white;
+    text-align: left;
+}
+
+nav {
+    padding: 1%;
+    text-align: left;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: rgb(254, 38, 162);
+  }
+
+  @media (max-width:995px){
+    .navbar{
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 40%;
+      border-left: 3px solid var(--main-color);
+      border-bottom: 3px solid var(--main-color);
+      border-bottom-left-radius: 2rem;
+      border-top: 0.1rem solid;
+      display: none;
+    }
+  }
+
+  section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+  }
+
+  .home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: var(--bg-color);
+  }
+
+  .home .home-content h1{
+    font-size:  5rem;
+    font-weight: 700;
+    line-height: 1.3;
+
+  }
+
+  .home-img {
+    border-radius: 50%;
+  }
+
+  .home-content h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  .home-img img{
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid var(--main-color);
+    cursor: pointer;
+  }
+
+  .home img:hover{
+    transform: scale(1.01);
+    filter: drop-shadow( 0 0 25px var(--main-color));
+  }
+
+  .home-content p{
+    font-size: 1.8rem;
+    font-weight: 500;
+  } 
+
+  span{
+    color: var(--main-color);
+  }
+  
+  .social-icon a{
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid var(--main-color);
+    color: var(--text-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    border-radius: 50%;
+    font-size: 2rem;
+    padding-top: 10px;
+  }
+  .social-icon a:hover{
+    color: pink;
+    transform: scale(1.3)translateY(-5px);
+    background: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    border: 2px solid var(--main-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+
+  .btn:hover{
+    transform: scale(1.03);
+    background-color: var(--main-color);
+    color: white;
+    box-shadow: 0 0 25px var(--main-color);
+  }
+
+  main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 8px;
+      color: white;
+  }
+
+  footer p{
+      color: white;
+      text-align: center;
+  }
