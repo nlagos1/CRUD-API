@@ -5,10 +5,12 @@ if (!isset($_GET['id'])) {
 
 $id = intval($_GET['id']);
 
-$ch = curl_init("https://teclab.uct.cl/~nicolas.lagos/api/proyectos.php?id=$id");
+// Añadimos ?action=delete para que la API sepa qué hacer
+$url = "https://teclab.uct.cl/~nicolas.lagos/api/proyectos.php?id=$id&action=delete";
+$ch = curl_init($url);
 
 curl_setopt_array($ch, [
-    CURLOPT_CUSTOMREQUEST => 'DELETE',
+    CURLOPT_POST => true, // Usamos POST en lugar de DELETE
     CURLOPT_RETURNTRANSFER => true
 ]);
 

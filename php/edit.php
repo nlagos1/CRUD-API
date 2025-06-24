@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $ch = curl_init("https://teclab.uct.cl/~nicolas.lagos/api/proyectos.php?id=$id");
     curl_setopt_array($ch, [
-        CURLOPT_CUSTOMREQUEST => 'PATCH',
+        CURLOPT_POST => true,
         CURLOPT_HTTPHEADER => ['Content-Type: application/json'],
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_POSTFIELDS => json_encode($data)
@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $response = curl_exec($ch);
     if ($response === false) {
-        die("Error en PATCH: " . curl_error($ch));
+        die("Error en POST: " . curl_error($ch));
     }
 
     echo "<h3>Respuesta de la API:</h3>";
