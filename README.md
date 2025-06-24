@@ -2,7 +2,7 @@
 Producción: https://teclab.uct.cl/~nicolas.lagos/index.php
 ## Descripción
 
-Consiste em un portafolio simple, empleando PHP, CSS, Bootstrap 5 y una REST API funcionando en un servidor dedicado simulando el ambiente de producción
+Consiste en un portafolio simple, empleando PHP, CSS, Bootstrap 5 y una REST API funcionando en un servidor dedicado simulando el ambiente de producción
 Contiene las siguientes funciones:
 - LogIn
 - Agregar un repositorio con las siguiemtes características
