@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
   <header>
-    <a href="./index.php">
+    <a href="../index.php">
       <img id="logo" src="../assets/images/logo2.png" alt="">
     </a>
   </header>
