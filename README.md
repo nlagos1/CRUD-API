@@ -35,4 +35,4 @@ Contiene las siguientes funciones:
 
  
 ## Herramientas de IA utilizadas y su aporte
-Solo se implemento ChatGPT para corregir bugs y problemas de compatibilidad en los apartados de la API (proyectos, config, etc)
+Se implemento ChatGPT y Cursor para corregir bugs y problemas de compatibilidad en los apartados de la API (proyectos, config, etc) y verificación de seguridad.
